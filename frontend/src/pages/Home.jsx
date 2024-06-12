@@ -36,7 +36,7 @@ const Home = () => {
   }, []);
 
   function handleDelete() {
-    const setuju = confirm("yakin");
+    const setuju = confirm("Anda yakin ingin menghapus data ini?");
     if (setuju) {
       axios
         .delete(`http://localhost:3000/books/${id}`)
